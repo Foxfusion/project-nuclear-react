@@ -1,0 +1,103 @@
+/* main css page
+
+Date Created:
+Date Modified:
+Description:
+Author:
+
+
+
+ */
+
+
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.topBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.10);
+}
+
+.breadcrumb {
+    color: rgba(0, 5, 5, 0.75);
+    font-size: 13px;
+}
+.breadcrumb span { color: #a0f23d; }
+
+.actions { display: flex; gap: 8px; }
+
+
+/* buttons */
+.actionBtn, .primaryBtn {
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(160, 242, 61, 0.35);
+    background: #dfe3e6;
+    color: rgb(160, 242, 61);
+    cursor: pointer;
+}
+
+.primaryBtn {
+    border-color: rgba(160,242,61,0.35);
+    background: rgb(111, 120, 129);
+    color: #a0f23d;
+}
+
+.notebook {
+    display: grid;
+    gap: 12px;
+}
+
+.cell {
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.10);
+    background: rgb(111, 120, 129);
+    overflow: hidden;
+}
+
+.cellHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.cellTitle { font-weight: 700; color: rgba(0, 7, 12, 0.95); }
+
+.runBtn {
+    height: 30px;
+    padding: 0 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(160,242,61,0.35);
+    background: rgba(160,242,61,0.12);
+    color: #a0f23d;
+    cursor: pointer;
+}
+
+.editor {
+    width: 100%;
+    min-height: 160px;
+    resize: vertical;
+    border: none;
+    outline: none;
+    padding: 12px;
+    background: rgb(207, 211, 218);
+    color: rgba(3, 14, 35, 0.95);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    font-size: 13px;
+}
+
+.cellFooter {
+    padding: 8px 12px;
+    color: rgba(229,231,235,0.55);
+    font-size: 12px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+}

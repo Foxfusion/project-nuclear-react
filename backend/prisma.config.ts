@@ -1,12 +1,17 @@
-import { defineConfig, env } from "prisma/config";
+import 'dotenv/config';
+import { defineConfig, env } from 'prisma/config';
 
 export default defineConfig({
-  schema: "prisma/schema.prisma",
-  migrations: {
-    path: "prisma/migrations",
-  },
-  engine: "classic",
-  datasource: {
-    url: env("DATABASE_URL"),
-  },
+    // Where your schema is
+    schema: 'prisma/schema.prisma',
+
+    // Where migrations will go (optional but recommended)
+    migrations: {
+        path: 'prisma/migrations',
+    },
+
+    // 👇 This is the important Prisma 7 bit
+    datasource: {
+        url: env('DATABASE_URL'),
+    },
 });

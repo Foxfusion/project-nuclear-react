@@ -1,0 +1,22 @@
+.card {
+    border: 1px solid rgba(255,255,255,0.10);
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.title {
+    font-size: 18px;
+    margin: 0 0 6px;
+}
+
+.sub {
+    color: rgba(229,231,235,0.75);
+    margin: 0;
+}
+
+.accent {
+    color: #a0f23d;
+    text-shadow: 0 0 16px rgba(160,242,61,0.35);
+}

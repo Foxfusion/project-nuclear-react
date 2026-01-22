@@ -1,0 +1,7 @@
+@import "./base/variables.css";
+@import "./base/typography.css";
+
+body {
+    margin: 0;
+    background: var(--bg-main);
+}

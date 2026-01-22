@@ -1,0 +1,14 @@
+.app-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 16px;
+    box-shadow: var(--shadow);
+    text-decoration: none;
+    color: var(--text-main);
+    transition: all 0.15s ease;
+}
+
+.app-card:hover {
+    transform: translateY(-3px);
+    border-left: 4px solid var(--accent);
+}

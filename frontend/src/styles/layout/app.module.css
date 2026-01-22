@@ -1,0 +1,108 @@
+.app {
+    display: flex;
+    min-height: 100vh;
+    background: #0b0f12;
+    color: #e5e7eb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- Sidebar ---------- */
+
+.sidebar {
+    width: 220px;
+    background: linear-gradient(
+            180deg,
+            #0f1419,
+            #0b0f12 40%,
+            #070a0d
+    );
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 18px 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.brand {
+    margin-bottom: 24px;
+}
+
+.project {
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #a0f23d;
+    text-shadow: 0 0 14px rgba(160, 242, 61, 0.45);
+}
+
+/* ---------- Nav ---------- */
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.link {
+    padding: 8px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: rgba(229, 231, 235, 0.85);
+    font-size: 14px;
+}
+
+.link:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.link.active {
+    background: rgba(160, 242, 61, 0.15);
+    color: #a0f23d;
+    box-shadow: inset 0 0 0 1px rgba(160, 242, 61, 0.35);
+}
+
+/* ---------- Logout ---------- */
+
+.logout {
+    margin-top: auto;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.logout:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* ---------- Main ---------- */
+
+.main {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.metal {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+            radial-gradient(circle at 15% 10%, rgba(255,255,255,0.06), transparent 35%),
+            radial-gradient(circle at 80% 20%, rgba(255,255,255,0.04), transparent 40%),
+            radial-gradient(circle at 50% 85%, rgba(160,242,61,0.12), transparent 45%),
+            linear-gradient(180deg, rgba(255,255,255,0.03), transparent 30%);
+}
+
+.content {
+    position: relative;
+    padding: 28px;
+    max-width: 1200px;
+}

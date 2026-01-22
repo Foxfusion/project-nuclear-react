@@ -1,0 +1,109 @@
+.app {
+    display: flex;
+    min-height: 100vh;
+    background: #0b0f12;
+    color: #e5e7eb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    flex: 0 0 240px;
+    padding: 18px 14px;
+    background: linear-gradient(180deg, #10161c, #0b0f12 45%, #070a0d);
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.brand {
+    padding: 6px 6px 2px;
+}
+
+.project {
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.name {
+    margin-top: 4px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #a0f23d;
+    text-shadow: 0 0 14px rgba(160, 242, 61, 0.45);
+}
+
+/* Nav */
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 0 4px;
+}
+
+/* base link style */
+.link {
+    display: block;
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-decoration: none;      /* ✅ removes underline */
+    color: rgba(229, 231, 235, 0.85);
+    font-size: 14px;
+}
+
+/* hover */
+.link:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+/* active */
+.active {
+    background: rgba(160, 242, 61, 0.14);
+    color: #a0f23d;
+    box-shadow: inset 0 0 0 1px rgba(160, 242, 61, 0.35);
+}
+
+/* Logout */
+.logout {
+    margin-top: auto;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.03);
+    color: rgba(229, 231, 235, 0.9);
+    cursor: pointer;
+}
+
+.logout:hover {
+    border-color: rgba(160, 242, 61, 0.35);
+    background: rgba(0, 0, 0, 0.35);
+}
+
+/* Main */
+.main {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.metal {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.85;
+    background:
+            radial-gradient(circle at 15% 10%, rgba(255,255,255,0.06), transparent 35%),
+            radial-gradient(circle at 80% 20%, rgba(255,255,255,0.04), transparent 40%),
+            radial-gradient(circle at 50% 85%, rgba(160,242,61,0.12), transparent 45%),
+            linear-gradient(180deg, rgba(255,255,255,0.03), transparent 30%);
+}
+
+.content {
+    position: relative;
+    padding: 28px;
+    max-width: 1200px;
+}

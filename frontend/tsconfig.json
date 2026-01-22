@@ -1,7 +1,19 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["DOM", "DOM.Iterable", "ES2017"],
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "jsx": "react-jsx",
+
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
+  },
+  "include": ["src"]
 }
